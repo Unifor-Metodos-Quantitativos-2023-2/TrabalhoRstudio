@@ -56,7 +56,10 @@ round(LIR, digits = 4)
 EMR= prop.table(table(Enem_$`Tipo de escola do Ensino Médio`))
 round(EMR, digits = 4)
 
-#Questão 2 
+
+
+
+#                   Questão 2 
 #2.2 Tabela cruzada Qual é a renda mensal de sua família versus na sua residência tem acesso à Internet.
 X=table(Enem_$`Qual é a renda mensal de sua família?`, Enem_$ `Na sua residência tem acesso à Internet?`)
 X
@@ -68,7 +71,10 @@ Y
 Z=table(Enem_$`Tipo de escola do Ensino Médio`,Enem_$`Língua Estrangeira`)
 Z
 
-#Questão 3 -Montar um gráfico de barra para a variável:
+
+
+#                   Questão 3
+#Montar um gráfico de barra para a variável:
 barplot(table(Enem_$`Qual é a renda mensal de sua família?`),xlab = "Tipo de Renda", ylab = "Valor da Renda", ylim =c(0,10000),col =c("green","yellow","red"),main = "renda mensal de sua família")
 
 barplot(table(Enem_$`Na sua residência tem acesso à Internet?`),xlab="Tem acesso a internet",ylab = "Quantidade", ylim = c(0,15000),col = c("red","green"), main= "Acesso a internet" )
