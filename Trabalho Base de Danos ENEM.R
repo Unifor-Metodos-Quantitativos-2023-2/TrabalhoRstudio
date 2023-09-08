@@ -1,5 +1,5 @@
 #obtem e prepara banco para uso
--data.frame(Enem_)
+-d'ata.frame(Enem_)
 attach(Enem_)
 
 
@@ -209,9 +209,9 @@ round(cv4,digits=3)
 #                 QUESTÃO 7
 #     Determinar Box Plot para as variáveis:
 #7.1Nota da prova de Matemática
+boxplot(Enem_$`Nota da prova de Matemática`)
 
 
 #7.2Nota da prova de redação
-
-
+boxplot(Enem_$`Nota da prova de redação`)
 
