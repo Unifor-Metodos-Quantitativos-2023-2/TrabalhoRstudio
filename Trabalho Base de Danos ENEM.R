@@ -60,7 +60,8 @@ round(EMR, digits = 4)
 
 
 #                   Questão 2 
-#2.2 Tabela cruzada Qual é a renda mensal de sua família versus na sua residência tem acesso à Internet.
+#   Montar tabela cruzada com as frequências simples e relativas para as variáveis:
+#2.2 Qual é a renda mensal de sua família versus na sua residência tem acesso à Internet.
 X=table(Enem_$`Qual é a renda mensal de sua família?`, Enem_$ `Na sua residência tem acesso à Internet?`)
 X
 
@@ -74,8 +75,60 @@ Z
 
 
 #                   Questão 3
-#Montar um gráfico de barra para a variável:
+#   Montar um gráfico de barra para a variável:
+#3.1Qual é a renda mensal de sua família
 barplot(table(Enem_$`Qual é a renda mensal de sua família?`),xlab = "Tipo de Renda", ylab = "Valor da Renda", ylim =c(0,10000),col =c("green","yellow","red"),main = "renda mensal de sua família")
 
+#3.2 Na sua residência tem acesso à Internet?
 barplot(table(Enem_$`Na sua residência tem acesso à Internet?`),xlab="Tem acesso a internet",ylab = "Quantidade", ylim = c(0,15000),col = c("red","green"), main= "Acesso a internet" )
+
+
+
+#                   Questão 4
+#   Montar um gráfico de setor para as variáveis:
+#4.1 Na sua residência tem acesso à Internet.
+
+
+#4.2 Na sua residência tem telefone celular.
+
+
+
+
+#                   Questão 5
+#   Determinar as medidas de posição e dispersão para as variáveis:
+#5.1 Nota da prova de Ciências da Natureza
+
+
+#5.2 Nota da prova de Ciências Humanas 
+
+
+#5.3 Nota da prova de Linguagens e Códigos 
+
+
+#5.4 Nota da prova de Matemática
+
+
+
+
+
+
+#                 QUESTÃO 6
+#     Determinar histograma para as variáveis: 
+#6.1 Nota da prova de Matemática
+
+
+#6.2 Nota da prova de redação
+
+
+
+
+
+#                 QUESTÃO 7
+#     Determinar Box Plot para as variáveis:
+#7.1Nota da prova de Matemática
+
+
+#7.2Nota da prova de redação
+
+
 
