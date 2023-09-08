@@ -208,10 +208,18 @@ round(cv4,digits=3)
 
 #                 QUESTÃO 7
 #     Determinar Box Plot para as variáveis:
-#7.1Nota da prova de Matemática
-boxplot(Enem_$`Nota da prova de Matemática`)
+#7.1 Nota da prova de Matemática
+boxplot(table(Enem_$`Nota da prova de Matemática`), 
+        xlab="nome de X aqui", ylab="nome de Y aqui", 
+        ylim=c(0,80), 
+        col=c("green","yellow","red"),
+        main="titulo aqui")
 
 
-#7.2Nota da prova de redação
-boxplot(Enem_$`Nota da prova de redação`)
+#7.2 Nota da prova de redação
+boxplot(table(Enem_$`Nota da prova de redação`), 
+        xlab="nome de X aqui", ylab="nome de Y aqui", 
+        ylim=c(0,80), 
+        col=c("green","yellow","red"),
+        main="titulo aqui")
 
