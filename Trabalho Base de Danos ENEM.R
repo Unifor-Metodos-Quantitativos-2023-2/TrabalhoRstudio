@@ -87,26 +87,109 @@ barplot(table(Enem_$`Na sua residência tem acesso à Internet?`),xlab="Tem aces
 #                   Questão 4
 #   Montar um gráfico de setor para as variáveis:
 #4.1 Na sua residência tem acesso à Internet.
+x= table(Enem_$`Na sua residência tem acesso à Internet?`)
+piepercent<- round(100*x/sum(x), 1)
+piepercent
 
+pie(table(Enem_$`Na sua residência tem acesso à Internet?`),labels = piepercent,col = c("red", "green"),main = "grafico de setor acesso a internet")
 
 #4.2 Na sua residência tem telefone celular.
+y= table(Enem_$`Na sua residência tem telefone celular?`)
+piepercent<- round(100*y/sum(y),1)
+piepercent
+
+pie(table(Enem_$`Na sua residência tem telefone celular?`), labels = piepercent,col = c("red", "green","blue","orange","yellow"), main = "grafico de setores telefone celular" )
+
 
 
 
 
 #                   Questão 5
-#   Determinar as medidas de posição e dispersão para as variáveis:
-#5.1 Nota da prova de Ciências da Natureza
+#     Determinar as medidas de posição e dispersão para as variáveis:
+# 5.1 Nota da prova de Ciências da Natureza
+#MEDIA
+media1 = mean(Enem_$`Nota da prova de Ciências da Natureza`)
+round(media1, digits=3) #mostra a media arredondada pra 3 casas decimais
+#MEDIANA
+median(Enem_$`Nota da prova de Ciências da Natureza`)
+#MODA
+mo1 = table(Enem_$`Nota da prova de Ciências da Natureza`)
+m1 =(moda=names(mo1)[mo1==max(mo1)])
+m1 #printa
+#AMPLITUDE
+range(Enem_$`Nota da prova de Ciências da Natureza`)
+#VARIANCIA
+vari1 = var(Enem_$`Nota da prova de Ciências da Natureza`)
+round(vari1, digits=3) #printa a variancia arredondada pra 3 digitos
+#DESVIO PADRAO
+dp1 = sd(Enem_$`Nota da prova de Ciências da Natureza`)
+round(dp1, digits = 3) #printa o desvio padrao arredondada pra 3 digitos
+#COEFICIENTE DE VARIACAO
+cv1=dp1/media1
+round(cv1,digits=3)
 
+# 5.2 Nota da prova de Ciências Humanas 
+media2 = mean(Enem_$`Nota da prova de Ciências Humanas`)
+round(media2, digits=3) #mostra a media arredondada pra 3 casas decimais
+#MEDIANA
+median(Enem_$`Nota da prova de Ciências Humanas`)
+#MODA
+mo2 = table(Enem_$`Nota da prova de Ciências Humanas`)
+m2 =(moda=names(mo2)[mo2==max(mo2)])
+m2 #printa
+#AMPLITUDE
+range(Enem_$`Nota da prova de Ciências Humanas`)
+#VARIANCIA
+vari2 = var(Enem_$`Nota da prova de Ciências Humanas`)
+round(vari2, digits=3) #printa a variancia arredondada pra 3 digitos
+#DESVIO PADRAO
+dp2 = sd(Enem_$`Nota da prova de Ciências Humanas`)
+round(dp2, digits = 3) #printa o desvio padrao arredondada pra 3 digitos
+#COEFICIENTE DE VARIACAO
+cv2=dp2/media2
+round(cv2,digits=3)
 
-#5.2 Nota da prova de Ciências Humanas 
+# 5.3 Nota da prova de Linguagens e Códigos 
+media3 = mean(Enem_$`Nota da prova de Linguagens e Códigos`)
+round(media3, digits=3) #mostra a media arredondada pra 3 casas decimais
+#MEDIANA
+median(Enem_$`Nota da prova de Linguagens e Códigos`)
+#MODA
+mo3 = table(Enem_$`Nota da prova de Linguagens e Códigos`)
+m3 =(moda=names(mo3)[mo3==max(mo3)])
+m3 #printa
+#AMPLITUDE
+range(Enem_$`Nota da prova de Linguagens e Códigos`)
+#VARIANCIA
+vari3 = var(Enem_$`Nota da prova de Linguagens e Códigos`)
+round(vari3, digits=3) #printa a variancia arredondada pra 3 digitos
+#DESVIO PADRAO
+dp3 = sd(Enem_$`Nota da prova de Linguagens e Códigos`)
+round(dp3, digits = 3) #printa o desvio padrao arredondada pra 3 digitos
+#COEFICIENTE DE VARIACAO
+cv3=dp3/media3
+round(cv3,digits=3)
 
-
-#5.3 Nota da prova de Linguagens e Códigos 
-
-
-#5.4 Nota da prova de Matemática
-
+# 5.4 Nota da prova de Matemática
+media4 = mean(Enem_$`Nota da prova de Matemática`)
+round(media4, digits=3) #mostra a media arredondada pra 3 casas decimais
+#MEDIANA
+median(Enem_$`Nota da prova de Matemática`)
+#MODA
+mo4 = table(Enem_$`Nota da prova de Matemática`)
+m4 =(moda=names(mo4)[mo4==max(mo4)])
+m4 #printa
+#AMPLITUDE
+range(Enem_$`Nota da prova de Matemática`)
+#VARIANCIA
+vari4 = var(Enem_$`Nota da prova de Matemática`)
+round(vari4, digits=3) #printa a variancia arredondada pra 3 digitos
+#DESVIO PADRAO
+dp4 = sd(Enem_$`Nota da prova de Matemática`)
+round(dp4, digits = 3) #printa o desvio padrao arredondada pra 3 digitos
+#COEFICIENTE DE VARIACAO
+cv4=dp4/media4
+round(cv4,digits=3)
 
 
 
