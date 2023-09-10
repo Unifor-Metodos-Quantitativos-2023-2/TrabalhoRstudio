@@ -198,10 +198,16 @@ round(cv4,digits=3)
 #                 QUESTÃO 6
 #     Determinar histograma para as variáveis: 
 #6.1 Nota da prova de Matemática
-
+hist(Enem_$`Nota da prova de Matemática`,
+  nclass=5,
+  xlab="nome de X aqui", ylab="nome de Y aqui",
+  main="titulo aqui")
 
 #6.2 Nota da prova de redação
-
+hist(Enem_$`Nota da prova de redação`,
+  nclass=5,
+  xlab="nome de X aqui", ylab="nome de Y aqui",
+  main="titulo aqui")
 
 
 
