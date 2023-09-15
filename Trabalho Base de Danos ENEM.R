@@ -1,5 +1,5 @@
 #obtem e prepara banco para uso
--d'ata.frame(Enem_)
+-data.frame(Enem_)-
 attach(Enem_)
 
 
