@@ -217,7 +217,7 @@ hist(Enem_$`Nota da prova de redação`,
 #7.1 Nota da prova de Matemática
 boxplot(table(Enem_$`Nota da prova de Matemática`), 
         xlab="Notas", ylab="Indivíduos",
-        ylim=c(0,0), 
+        ylim=c(0,9), 
         col=c("green","yellow","red"),
         main="Nota da prova de Matemática")
 
