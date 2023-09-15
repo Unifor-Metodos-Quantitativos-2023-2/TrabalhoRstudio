@@ -77,7 +77,7 @@ Z
 #                   Questão 3
 #   Montar um gráfico de barra para a variável:
 #3.1Qual é a renda mensal de sua família
-barplot(table(Enem_$`Qual é a renda mensal de sua família?`),xlab = "Tipo de Renda", ylab = "Valor da Renda", ylim =c(0,10000),col =c("green","yellow","red"),main = "renda mensal de sua família")
+barplot(table(Enem_$`Qual é a renda mensal de sua família?`),xlab = "Tipo de Renda", ylab = "Valor da Renda", ylim =c(0,10000),col =c("green","yellow","red"),main = "Renda mensal da família")
 
 #3.2 Na sua residência tem acesso à Internet?
 barplot(table(Enem_$`Na sua residência tem acesso à Internet?`),xlab="Tem acesso a internet",ylab = "Quantidade", ylim = c(0,15000),col = c("red","green"), main= "Acesso a internet" )
@@ -91,14 +91,14 @@ x= table(Enem_$`Na sua residência tem acesso à Internet?`)
 piepercent<- round(100*x/sum(x), 1)
 piepercent
 
-pie(table(Enem_$`Na sua residência tem acesso à Internet?`),labels = piepercent,col = c("red", "green"),main = "grafico de setor acesso a internet")
+pie(table(Enem_$`Na sua residência tem acesso à Internet?`),labels = piepercent,col = c("red", "green"),main = "Acesso a internet")
 
 #4.2 Na sua residência tem telefone celular.
 y= table(Enem_$`Na sua residência tem telefone celular?`)
 piepercent<- round(100*y/sum(y),1)
 piepercent
 
-pie(table(Enem_$`Na sua residência tem telefone celular?`), labels = piepercent,col = c("red", "green","blue","orange","yellow"), main = "grafico de setores telefone celular" )
+pie(table(Enem_$`Na sua residência tem telefone celular?`), labels = piepercent,col = c("red", "green","blue","orange","yellow"), main = "Possui telefone celular" )
 
 
 
@@ -200,14 +200,14 @@ round(cv4,digits=3)
 #6.1 Nota da prova de Matemática
 hist(Enem_$`Nota da prova de Matemática`,
   nclass=5,
-  xlab="nome de X aqui", ylab="nome de Y aqui",
-  main="titulo aqui")
+  xlab="Notas", ylab="Indivíduos",
+  main="Nota da prova de Matemática")
 
 #6.2 Nota da prova de redação
 hist(Enem_$`Nota da prova de redação`,
   nclass=5,
-  xlab="nome de X aqui", ylab="nome de Y aqui",
-  main="titulo aqui")
+  xlab="Notas", ylab="Indivíduos",
+  main="Nota da prova de redação")
 
 
 
@@ -216,16 +216,16 @@ hist(Enem_$`Nota da prova de redação`,
 #     Determinar Box Plot para as variáveis:
 #7.1 Nota da prova de Matemática
 boxplot(table(Enem_$`Nota da prova de Matemática`), 
-        xlab="nome de X aqui", ylab="nome de Y aqui", 
+        xlab="Notas", ylab="Indivíduos",
         ylim=c(0,80), 
         col=c("green","yellow","red"),
-        main="titulo aqui")
+        main="Nota da prova de Matemática")
 
 
 #7.2 Nota da prova de redação
 boxplot(table(Enem_$`Nota da prova de redação`), 
-        xlab="nome de X aqui", ylab="nome de Y aqui", 
+        xlab="Notas", ylab="Indivíduos",
         ylim=c(0,80), 
         col=c("green","yellow","red"),
-        main="titulo aqui")
+        main="Nota da prova de redação")
 
